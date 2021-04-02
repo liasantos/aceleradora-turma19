@@ -1,0 +1,124 @@
+/* Global ============= */
+
+:root {
+  --orange: #e99040;
+  --red: #fe5b57;
+  --white-lime: #fcfcfa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+html {
+  font-size: 93.75%; /* 15px */
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header" /* linha1: cabeçalho*/
+    "main main aside"; /*linha2: main 2x maior que aside*/
+  grid-gap: 1rem;
+  grid-column-gap: 5rem;
+  grid-template-columns: auto auto 52vh;
+  grid-template-rows: auto auto auto;
+  background-color: var(--red);
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header ============= */
+
+.grid-header {
+  grid-area: header;
+  background-color: var(--white-lime);
+}
+
+.container-menu {
+  margin-top: 1rem;
+}
+
+a {
+  justify-content: space-evenly;
+  margin-left: 4rem;
+  color: var(--orange);
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo-aceleradora {
+  width: 14rem;
+  float: right;
+  margin-right: 3rem;
+}
+
+/* Aside ============= */
+
+.grid-aside {
+  grid-area: aside; /*especifica a lacuna que o elemento aside pertence*/
+  background-color: var(--white-lime);
+  border-radius: 20px;
+  margin-right: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.container-logoredondo {
+  margin-top: 1rem;
+  margin-bottom: 1.7rem;
+}
+
+.logo-redondo {
+  border-radius: 100%;
+  width: 12rem;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.texto-aside {
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* Main ============= */
+
+.grid-main {
+  grid-area: main; /*especifica a lacuna que o elemento main pertence*/
+  text-align: center;
+}
+
+.foto-turma {
+  width: 40rem;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: 30px;
+}
+
+/* Titles and text ============= */
+
+h1 {
+  color: var(--white-lime);
+  font-family: "Archivo Black", sans-serif;
+  font-size: 3rem;
+}
+
+h2 {
+  color: var(--orange);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.5;
+}
