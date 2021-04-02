@@ -60,7 +60,7 @@ a {
 /* Aside ============= */
 
 .grid-aside {
-  grid-area: aside; /*especifica a lacuna que o elemento aside pertence*/
+  grid-area: aside;
   background-color: var(--white-lime);
   border-radius: 20px;
   margin-right: 2.5rem;
@@ -92,7 +92,7 @@ a {
 /* Main ============= */
 
 .grid-main {
-  grid-area: main; /*especifica a lacuna que o elemento main pertence*/
+  grid-area: main;
   text-align: center;
 }
 
