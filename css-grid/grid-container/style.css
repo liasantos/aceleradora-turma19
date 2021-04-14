@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  color: cyan;
+}
+
+.container {
+  display: grid; /*inicia minha grid*/
+  grid-template-columns: 1fr 3fr 2fr; /*fatia em colunas - fr = fração*/
+  grid-template-rows: 20vh 70vh 10vh; /*fatia em linhas - vh = altura da tela que eu vejo*/
+  gap: 1px; /*lacuna entre colunas e linhas*/
+}
+
+header {
+  background: blueviolet;
+  grid-column: 1/4; /*linha virtual vertical de início / linha virtual de fim*/
+  grid-row: 1/2; /*linha virtual horizontal de início // linha virtual de fim*/
+}
+nav {
+  background: darkorchid;
+  grid-column-start: 1; /*linha virtual vertical de início*/
+  grid-column-end: 2; /*linha virtual vertical de fim*/
+  grid-row-start: 2; /*linha virtual horizontal de início*/
+  grid-row-end: 3; /*linha virtual horizontal de fim*/
+}
+
+main {
+  background: mediumorchid;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+aside {
+  background: orchid;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+footer {
+  background: plum;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
